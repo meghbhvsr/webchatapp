@@ -1,0 +1,106 @@
+html {
+    width: 60%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #806b6b;
+}
+body {
+    height: 100%;
+    min-height: 130%;
+    line-height: 1.75;
+    background-color: #f1ecec;
+}
+
+a:link:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+}
+input[type=submit], button {
+    cursor: pointer;
+    cursor: hand;
+}
+@media(max-width: 900px) {
+    html {
+        font-size: 14px !important;
+        width: 80% !important;
+    }
+}
+@media(max-width: 480px) {
+    html {
+        font-size: 12px !important;
+        width: 90% !important;
+    }
+}
+@media(max-width: 320px) {
+    html {
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+}
+
+#message-form {
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    padding-right: 50;
+}
+#getname {
+    position: absolute;
+    bottom: 100px;
+    border: 3px solid black;
+}
+#file {
+    position: absolute;
+    bottom: 150px;
+    border: 3px solid black;
+}
+#up {
+    position: absolute;
+    bottom: 100px;
+    border: 3px solid black;
+}
+
+#messages {
+    /* list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; */
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    border: 3px solid green;
+}
+
+#messages li {
+    padding: 5px 10px;
+    width: 100%
+}
+
+#messages li:nth-child(even) {
+    color: white;
+    background: grey;
+}
+
+#messages {
+    height:400px; 
+    width: 60%;
+}
+
+#messages {
+    overflow:hidden; 
+    overflow-y:auto;
+}
+
+#uploadForm {
+    position: absolute;
+    bottom: 100px;
+    border: 3px solid black;
+}

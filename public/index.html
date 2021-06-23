@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <title>Megh's Web Chat Application/title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CHANGE ME">
+    <meta name="keywords" content="CHANGE ME">
+    <meta name="author" content="CHANGE ME">
+    <!-- Load jquery, bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src = "socket.io/socket.io.js"></script>
+    <script>
+        var socket = io()
+    </script>
+    <!-- Custom CSS End -->
+</head>
+<body>
+    <div class = "container">
+        <div class = "jumbotron">
+            <h1> Welcome to Megh's Chat App</h1> 
+            <ul>
+                <a id = "mon" class = "btn btn-primary" href = "/monkey">Monkey</a>
+                <a id = "anim" class = "btn btn-primary" href = "/anime">Anime</a>
+                <a id = "nba" class = "btn btn-primary" href = "/nba">NBA</a>
+            </ul>
+        </div>
+    </div>
+    <form id = "getname">
+        <div class="id">
+            <label for="N2">Enter Name</label>
+            <input type="text" class="form-control" id="nam" value="Value" placeholder="Placeholder"> 
+        </div>
+        <div class="id">    
+            <br> 
+            <input type='submit' class="btn btn-secondary23">
+        </div>
+
+    </form>
+    <a>Name you will enter with: </a>
+    <br>
+    <a id = "name">Name</a>
+    <script src="/index.js"></script>
+    <!-- Leave me at the bottom of body -->
+</body>
+
+
+</html>
+
+
+
+
+
+
